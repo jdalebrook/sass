@@ -1,0 +1,53 @@
+.msg, .msge, .msgw {
+  border: solid 0.1em green;
+}
+
+body {
+  font-family: arial;
+  background-color: #6d6cce;
+}
+
+* {
+  color: white;
+}
+
+ul {
+  color: white;
+}
+ul li {
+  list-style-type: none;
+}
+ul a {
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  align-items: strech;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1em 2em;
+  margin: 1em;
+  flex-basis: auto;
+  cursor: pointer;
+  background: #3a3a3a;
+  color: white;
+  padding: 1em;
+  border: solid 0.1em green;
+  box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+  background: black;
+  border: solid 0.1em #fff;
+}
+
+.msge {
+  border-color: #ff0202;
+}
+
+.msgw {
+  border-color: #ff9102;
+}
+
+/*# sourceMappingURL=style.css.map */

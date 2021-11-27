@@ -1,0 +1,32 @@
+$primary-color: rgb(109, 108, 206);
+$secondary-color: rgb(255, 255, 255);
+$grey-color: rgb(134, 134, 134);
+$err-color: rgb(255, 2, 2);
+$err-wr:rgb(255, 145, 2);
+$primaryfont: arial;
+$highColor: #fff;
+$theme: rgb(0, 0, 0);
+$themealert: green;
+$standar: 1em;
+$boxSha: 0px 0px $standar rgba($theme, .25);
+@mixin borders($themealert) {
+    border: solid $standar/10 $themealert;
+}
+
+@mixin theme($theme) {
+    cursor: pointer;
+    background: $theme;
+    color: $secondary-color;
+    padding: $standar;
+    @include borders($themealert);
+    box-shadow: $boxSha;
+}
+
+@mixin hightlight {
+    background: $theme;
+    @include borders($highColor);
+}
+
+%textMsg {
+    @include borders($themealert);
+}

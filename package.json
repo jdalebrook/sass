@@ -1,0 +1,25 @@
+{
+    "name": "sass",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "node .",
+        "dev": "nodemon . && npm run scss",
+        "nodemon": "nodemon .",
+        "scss": "sass --watch sass/style.scss css/style.css"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "node-sass": "^6.0.1",
+        "sass": "^1.43.5"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    },
+    "nodemonConfig": {
+        "ext": "*"
+    }
+}

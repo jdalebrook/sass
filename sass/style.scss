@@ -1,0 +1,48 @@
+@use "variables";
+body {
+    font-family: variables.$primaryfont;
+    background-color: variables.$primary-color;
+}
+
+* {
+    color: variables.$secondary-color;
+}
+
+ul {
+    color: variables.$secondary-color;
+    li {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.card {
+    display: flex;
+    align-items: strech;
+    flex-wrap: wrap;
+    justify-content: flex-start; // flex-flow: column wrap;
+    gap: variables.$standar variables.$standar*2;
+    margin: variables.$standar;
+    flex-basis: auto;
+    @include variables.theme($theme: rgb(58, 58, 58));
+}
+
+.card:hover {
+    @include variables.hightlight;
+}
+
+.msg {
+    @extend %textMsg;
+}
+
+.msge {
+    @extend %textMsg;
+    border-color: variables.$err-color;
+}
+
+.msgw {
+    @extend %textMsg;
+    border-color: variables.$err-wr;
+}
